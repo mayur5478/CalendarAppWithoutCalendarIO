@@ -1,0 +1,36 @@
+#app-container {
+  padding-top: 60px; /* 60px to make the container make room for the navigation bar */
+}
+
+.grey-background{
+  background: lightgrey;
+  width: 60%;
+  height: 160px;
+  position: absolute;
+  margin:2px;
+}
+
+.currentTime{
+  padding-top: 73px;
+  height: 86px;
+  padding-right: 15px;
+  text-align: end;
+}
+
+.padRight15{
+  padding-right: 15px;
+}
+
+#event{
+  z-index:1;
+  text-align:start;
+  color:white;
+  background:darkgoldenrod;
+  background-clip:content-box;
+  position:relative;
+  opacity:0.6;
+  margin:10px;
+  border:1px solid darkslategrey;
+  box-sizing: content-box;
+  padding:2px;
+}

@@ -1,0 +1,5 @@
+    &nbsp<span ><i class="icon-calendar"></i>&nbsp<%=model.get('title')%></span>
+    <br>&nbsp<span class="eventTime"><% var start = new Date(model.get('startTime'));
+    var end = new Date(model.get('endTime'));
+    var startTime = start.toLocaleTimeString();
+    var endTime =  end.toLocaleTimeString();%><%=startTime%> - <%=endTime%></span>

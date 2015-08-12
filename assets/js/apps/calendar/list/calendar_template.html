@@ -1,0 +1,23 @@
+<table>
+    <tr>
+        <td class="padRight15"><button id="today" >Today</button></td>
+        <td>
+            <button id="previous"><</button>&nbsp
+            <button id="next">></button>&nbsp
+            <span id="currentDate"></span>
+        </td>
+    </tr>
+    <%for(var i=0;i<24;i++){
+    var ampm = i<11?" AM":" PM";
+    var currenthr= (i%12) + 1;
+    var currentTime = currenthr + ampm ;%>
+    <tr>
+        <td>
+        <div id='<%= i %>' class="currentTime"> <%=currentTime%></div>
+        </td>
+        <td>
+            <div id ='<%=i%>'class="grey-background"></div>
+        </td>
+    </tr>
+    <% } %>
+</table>
